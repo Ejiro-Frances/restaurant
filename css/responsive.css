@@ -60,4 +60,50 @@
   .food-container {
     flex-direction: column;
   }
+  /* the slider image */
+  .container .wrapper {
+    width: 98%;
+    height: 55vh;
+  }
+  /* start */
+  .container #slider-img-1 {
+    padding-top: 10rem;
+  }
+  #slider-img-1 img {
+    width: 98%;
+    height: 90%;
+  }
+  .container #slider-img-2,
+  .container #slider-img-3,
+  .container #slider-img-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+  }
+  .container #slider-img-3 {
+    height: 40%;
+    padding: 10px;
+  }
+  /* open days */
+  .open-days {
+    gap: 10rem;
+    font-size: larger;
+  }
+  .video {
+    height: 100%;
+    width: 100%;
+    background-color: unset;
+  }
+  .scroll {
+    display: none;
+  }
+  .Testimonials {
+    padding: 2rem 1.5rem;
+    line-height: 1.5;
+  }
+  .Testimonials h2 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
 }
