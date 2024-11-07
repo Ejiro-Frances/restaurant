@@ -103,6 +103,7 @@ ul {
 }
 .form-container {
   padding: 5.4vh 0 1.5vh;
+  min-width: 26rem;
 }
 .form-container form {
   border: 1px solid #cccc;
@@ -112,8 +113,9 @@ ul {
 }
 .form-container form {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   cursor: pointer;
+  position: relative;
 }
 .form-container form:hover {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.446);
@@ -123,12 +125,16 @@ ul {
   max-height: 2.7rem;
 }
 .hero-page input {
-  padding: 1rem 0;
+  padding: 1.52rem 0;
   outline: none;
   border: none;
   max-width: 70%;
 }
 #location {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
   padding: 1.5rem;
   color: #ffffff;
   background-color: #ff7400;
@@ -394,11 +400,9 @@ video {
 }
 
 footer {
-  text-align: center;
-  background: darkslategray;
-  min-height: 5vh;
-  color: #ff7400;
+  background: #e1edf0;
   min-width: 100%;
+  padding: 2rem;
   margin: 0;
 }
 footer a {
@@ -407,4 +411,37 @@ footer a {
 }
 footer a:hover {
   color: #ffae42;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  line-height: 1.7;
+}
+.footer-container article {
+  max-width: 30%;
+}
+.small-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid gray;
+  margin: 2rem;
+  padding-top: 2rem;
+}
+.social-links {
+  display: flex;
+  gap: 2rem;
+}
+.social-links div {
+  border: 1px solid #ff7400;
+  border-radius: 50%;
+}
+.social-links div img {
+  padding: 1rem;
+}
+
+.social-links div:hover {
+  opacity: 0.8;
 }
