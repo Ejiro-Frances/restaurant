@@ -8,93 +8,77 @@
     <link rel="stylesheet" href="./css/responsive.css">
   </head>
   <body>
-    <div class="heroPage">
-      <div class="navBar">
-         <!-- Hamburger Menu Button -->
-         <div class="hamburger-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-         </div>
-         <!-- Menu -->
-        <ul class="menu mobile-menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#order">Order Now</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Location</a></li>
-          <li>
-            <img src="./icons/icons8-cart-80.png" alt="cart" height="20px" />
-          </li>
-          <li class="search-bar">
-            <label for="search">
-            <img
-              src="./icons/icons8-search-50.png"
-              alt="search"
-              height="20px"
-            />
-          </label>
-          <input type="search" class="i-search" id="search" placeholder="search">
-          </li>
-        </ul>
-      </div>
-
-      <div class="mainBody" id="home">
-        <h1>
-          Welcome <br />
-          To Our Cuisine <br />
-          Restaurant
-        </h1>
+    <div id="background-img">
+      <header class="header">
+        <div class="navBar">
+          <!-- Hamburger Menu Button -->
+          <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <!-- Menu Lists -->
+          <ul class="menu mobile-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#order">Order Now</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Location</a></li>
+            <li>
+              <img src="./icons/icons8-cart-80.png" alt="cart" height="20px" />
+            </li>
+            <li class="search-bar">
+              <label for="search">
+              <img
+                src="./icons/icons8-search-50.png"
+                alt="search"
+                height="20px"
+              />
+            </label>
+            <input type="search" class="i-search" id="search" placeholder="search">
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main class="hero-page" id="home">
+        <h1>Welcome To Our Cuisine Restaurant</h1>
         <div class="form-container">
           <form>
-            <img
-              src="./icons/icons8-search-50.png"
-              alt="search"
-              class="form-search"
-            />
-            <input type="search" placeholder="Search here" />
+            <div>
+              <img src="./icons/icons8-search-50.png" alt="search icon" class="form-search"/>
+              <input type="search" placeholder="Search here" />
+            </div>
+              <label for="location">
+                <select name="location" id="location">
+                  <option value="location">Location</option>
+                </select>
+              </label>
           </form>
-          <label for="location">
-            <select name="location" id="location">
-              <option value="location">Location</option>
-            </select>
-          </label>
         </div>
 
-        <div class="icons">
-          <div class="icon-inside">
-            <img
-              src="./icons/facebook_145802.png"
-              alt="facebook-icon"
-              height="20px"
-            />
+        <div class="icon-container">
+          <div class="icon">
+            <img src="./icons/social--facebook-with-circle.svg" alt="facebook-icon"/>
             <p>252k</p>
           </div>
 
-          <div class="icon-inside">
-            <img
-              src="./icons/twitter_3670151.png"
-              alt="twitter-icon"
-              height="20px"
-            />
-            <p>62k</p>
+          <div class="icon">
+            <img src="./icons/arcticons--x-twitter.svg" alt="twitter-icon"/>
+              <p>62k</p>
           </div>
 
-          <div class="icon-inside">
-            <img
-              src="./icons/instagram icon.jpg"
-              alt="instagram-icon"
-              height="20px"
-            />
-            <p>55k</p>
+          <div class="icon">
+            <img src="./icons/cib--instagram.svg" alt="instagram-icon"/>
+              <p>55k</p>
+            </div>
           </div>
-        </div>
-      </div>
+      </main>
     </div>
-
-    <div class="middleSection" id="about">
-      <h4 class="color-me-orange">About Us</h4>
+<!-- About Section -->
+    <section class="aboutSection" id="about">
+      <article>
+        <h4 class="color-me-orange">About Us</h4>
       <h2 class="heading-two">
         Discover Our <br />
         Restaurant Story
@@ -112,14 +96,12 @@
         you'll love. Whether you're here for a quick bite or a leisurely meal,
         we promise a memorable experience every time.
       </p>
-      <br />
-      <br />
-      <ul>
-        <li>Discover Menu</li>
-        <li><img src="./icons/arrow.png" alt="arrow" height="30px" /></li>
-      </ul>
-      <br />
+    <div class="buttons">
+      <button class="discover-btn">Discover Menu</button>
+      <button class="arrow-btn"><img src="./icons/arcticons--emoji-rightwards-arrow.svg" alt="arrow"/></button>
     </div>
+   </article>
+    </section>
     <!-- next section -->
     <section class="order-section" id="order">
       <h4 class="color-me-orange place-center">Order Online Now</h4>
@@ -135,10 +117,14 @@
       </div>
 
       <div class="food-container">
-        <img class="food" src="./images/food one.jpg" alt="plate of food" />
-        <img class="food" src="./images/food two.jpeg" alt="plate of food" />
-        <img class="food" src="./images/food three.png" alt="plate of food" />
-        <img class="food" src="./images/food four.png" alt="plate of food" />
+        <img src="./images/food_1.jpg" alt="food">
+        <img src="./images/food_2.jpg" alt="food">
+        <img src="./images/food_3.jpg" alt="food">
+        <img src="./images/food_4.jpg" alt="food">
+        <img src="./images/food_5.jpg" alt="food">
+        <img src="./images/food_6.jpg" alt="food">
+        <img src="./images/food_7.jpg" alt="food">
+        <img src="./images/food_8.jpg" alt="food">
       </div>
     </section>
     <!-- this is where the slides begin -->
@@ -190,13 +176,9 @@
       </div>
 
     <div class="video-wrapper">
-      <div class="left-scroll scroll"> \< </div>
-      <div class="video-container">
         <div class="video">
           <video src="./videos/Super Slow Motion Shot of Flying Cuts of Colorful Vegetables and Water Drops on Black background at 1000fps. Stock Video - Adobe Stock.mp4" controls></video>
         </div>
-      </div>
-      <div class="right-scroll scroll"> > </div>
     </div>
 
     <section class="Testimonials">
